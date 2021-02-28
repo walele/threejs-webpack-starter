@@ -1,6 +1,3 @@
-## ThreeJs Webpack Starter
-
-
 A ThreeJs starter with webpack, OrbitControl, CCapture, CCWrold
 
 
