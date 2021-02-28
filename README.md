@@ -8,7 +8,7 @@ A ThreeJs starter with webpack, OrbitControl, CCapture, CCWrold
 
 1. npm install
 2. npm run start
-3. touch aggie
+
 
 Threejs code go in src/index.js
 

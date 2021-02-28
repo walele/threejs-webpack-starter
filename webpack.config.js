@@ -11,7 +11,6 @@ module.exports = {
   devServer: {
      contentBase: './dist',
   },
-  node: { fs: 'empty' },
   module: {
      rules: [
        {
@@ -26,12 +25,14 @@ module.exports = {
          use: [
            'file-loader'
          ]
-       },       
+       },
      ],
    },
   plugins: [
-   new CopyPlugin([
-     'node_modules/ccapture.js/build/CCapture.all.min.js',
-   ]),
+   new CopyPlugin({
+     patterns: [
+       { from: 'node_modules/ccapture.js/build/CCapture.all.min.js', to: "dist" },
+     ]
+   }),
  ],
 };
